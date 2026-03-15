@@ -28,7 +28,8 @@ onAuthStateChanged(auth, (user) => {
             window.location.href = "index.html"; // Expulsa o intruso
         }
     } else {
-        signInWithPopup(auth, provider);
+        alert("Você precisa fazer login primeiro!");
+        window.location.href = "index.html";
     }
 });
 

@@ -6,12 +6,12 @@ import { categoriasOscar } from './dados.js';
 
 // INSIRA SUA KEY
 const firebaseConfig = {
-  apiKey: "AIzaSyAQ-fi0_R9ZFyYTUWG5buXKuHXd3vKqfKE",
-  authDomain: "bolao-oscar-2026.firebaseapp.com",
-  projectId: "bolao-oscar-2026",
-  storageBucket: "bolao-oscar-2026.firebasestorage.app",
-  messagingSenderId: "886230610906",
-  appId: "1:886230610906:web:990c459520e48bbe7f46e3"
+    apiKey: "AIzaSyAQ-fi0_R9ZFyYTUWG5buXKuHXd3vKqfKE",
+    authDomain: "bolao-oscar-2026.firebaseapp.com",
+    projectId: "bolao-oscar-2026",
+    storageBucket: "bolao-oscar-2026.firebasestorage.app",
+    messagingSenderId: "886230610906",
+    appId: "1:886230610906:web:990c459520e48bbe7f46e3"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -28,13 +28,12 @@ onAuthStateChanged(auth, (user) => {
         // Opcional: Você pode preencher o campo "nome" automaticamente com user.displayName
         document.getElementById("nome").value = user.displayName;
     } else {
-        usuarioLogado = null;
-        // Força o login antes de liberar a tela de aposta
-        signInWithPopup(auth, provider).catch(erro => console.error("Erro no login:", erro));
+        alert("Você precisa fazer login primeiro!");
+        window.location.href = "index.html";
     }
 });
 
-let meusPalpites = {}; 
+let meusPalpites = {};
 const containerCategorias = document.getElementById("categorias-container");
 const selectCerteza = document.getElementById("certeza_absoluta");
 
@@ -57,7 +56,7 @@ categoriasOscar.forEach(cat => {
 });
 
 document.querySelectorAll('.nominee-card').forEach(card => {
-    card.addEventListener('click', function() {
+    card.addEventListener('click', function () {
         const categoriaClicada = this.getAttribute('data-categoria');
         const indicadoClicado = this.getAttribute('data-indicado');
 
@@ -90,7 +89,7 @@ formAposta.addEventListener("submit", async (evento) => {
     const dadosDaAposta = {
         nome: document.getElementById("nome").value, // Ou usuarioLogado.displayName
         email: usuarioLogado.email, // Salva o email por segurança
-        pontos: 0, 
+        pontos: 0,
         palpites: meusPalpites,
         certeza_absoluta: document.getElementById("certeza_absoluta").value
     };
@@ -101,9 +100,9 @@ formAposta.addEventListener("submit", async (evento) => {
     try {
         // MUDANÇA PRINCIPAL: Usamos setDoc e amarramos a aposta à ID do usuário
         await setDoc(doc(db, "participantes", usuarioLogado.uid), dadosDaAposta);
-        
+
         alert("Sua cédula foi trancada! Boa sorte!");
-        window.location.href = "index.html"; 
+        window.location.href = "index.html";
     } catch (erro) {
         alert("Erro ao salvar. Verifique se você está logado.");
         btnSubmit.innerText = "Confirmar Minhas Escolhas"; btnSubmit.style.opacity = "1";

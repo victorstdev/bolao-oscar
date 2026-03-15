@@ -1,5 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
 import { getFirestore, collection, doc, onSnapshot } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js"; // <- Linha nova
 import { categoriasOscar } from './dados.js'; 
 
 // INSIRA SUA KEY
@@ -14,6 +15,37 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+
+// Inicializando a Autenticação
+const auth = getAuth(app);
+const provider = new GoogleAuthProvider();
+
+// Lógica do Botão de Login
+const btnLogin = document.getElementById("btn-login-google");
+
+// Ouve se tem alguém logado ou não
+onAuthStateChanged(auth, (user) => {
+    if (user) {
+        // Se estiver logado, esconde o botão
+        btnLogin.style.display = "none";
+    } else {
+        // Se não estiver, mostra o botão
+        btnLogin.style.display = "inline-flex";
+    }
+});
+
+// Ação de clique no botão
+btnLogin.addEventListener("click", () => {
+    signInWithPopup(auth, provider)
+        .then((result) => {
+            console.log("Logado com sucesso!", result.user.displayName);
+        })
+        .catch((erro) => {
+            console.error("Erro ao fazer login", erro);
+            alert("Ocorreu um erro ao abrir o login do Google.");
+        });
+});
+
 
 let participantes = [];
 let gabarito = {};

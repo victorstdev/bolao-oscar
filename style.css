@@ -109,3 +109,29 @@ body {
 .prediction-pick { font-size: 14px; color: #fff; font-style: italic; }
 .prediction-winner { font-size: 12px; color: var(--text-muted); margin-top: 5px; }
 .prediction-winner span { color: #ff4444; font-weight: bold; }
+
+/* Botão de Login Google */
+.btn-login {
+    background-color: #ffffff;
+    color: #444;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-login img {
+    width: 18px;
+}

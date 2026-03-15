@@ -42,6 +42,7 @@ onAuthStateChanged(auth, (user) => {
         escutarDados(user.uid);
     } else {
         // Se não estiver logado, manda para o ranking
+        alert("Você precisa fazer login primeiro!");
         window.location.href = "index.html";
     }
 });

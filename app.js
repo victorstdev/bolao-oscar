@@ -206,3 +206,44 @@ function calcularEAtualizarRanking() {
         `;
     });
 }
+
+// ==========================================
+// 5. CONTADOR REGRESSIVO (DEADLINE 20H)
+// ==========================================
+const dataFimApostas = new Date("2026-03-15T20:30:00-03:00").getTime();
+const countdownElement = document.getElementById("countdown-timer");
+const countdownContainer = document.getElementById("countdown-container");
+
+const timerInterval = setInterval(() => {
+    const agora = new Date().getTime();
+    const distancia = dataFimApostas - agora;
+
+    if (distancia < 0) {
+        // O TEMPO ACABOU!
+        clearInterval(timerInterval);
+        countdownElement.innerText = "ENCERRADAS";
+        
+        // Muda o visual para vermelho
+        countdownContainer.style.color = "#ff4444";
+        countdownContainer.style.borderColor = "#ff4444";
+        countdownContainer.style.background = "rgba(255, 68, 68, 0.1)";
+        countdownContainer.style.boxShadow = "none";
+        
+        // Se a pessoa não apostou, avisa no card que não dá mais
+        if(dashTag) dashTag.innerText = "Fechado";
+        if(dashTitle) dashTitle.innerText = "Apostas Encerradas";
+        if(dashDesc) dashDesc.innerText = "O tapete vermelho já começou! Acompanhe o ranking ser atualizado ao vivo.";
+        if(btnApostar) btnApostar.style.display = "none"; 
+        
+    } else {
+        // CALCULA O TEMPO RESTANTE
+        const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+        const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+
+        countdownElement.innerText = 
+            String(horas).padStart(2, '0') + "h " + 
+            String(minutos).padStart(2, '0') + "m " + 
+            String(segundos).padStart(2, '0') + "s";
+    }
+}, 1000); // Atualiza a cada 1 segundo

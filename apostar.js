@@ -234,10 +234,34 @@ atualizarInterface();
 // ==========================================
 // 5. ENVIO PARA O BANCO DE DADOS
 // ==========================================
+
+// ==========================================
+// 5. BLOQUEIO DE TEMPO E ENVIO
+// ==========================================
+const prazoFinal = new Date("2026-03-15T20:30:00-03:00");
+
+// Se o relógio do usuário já passou das 20h, desativa o botão visualmente
+if (new Date() > prazoFinal) {
+    const btnSubmit = document.querySelector('#step-review button[type="submit"]');
+    if (btnSubmit) {
+        btnSubmit.disabled = true;
+        btnSubmit.innerHTML = '<i class="fas fa-hourglass-end"></i> Apostas Encerradas';
+        btnSubmit.style.background = "var(--surface-light)";
+        btnSubmit.style.color = "#ff4444";
+        btnSubmit.style.cursor = "not-allowed";
+        btnSubmit.style.boxShadow = "none";
+    }
+}
 const formAposta = document.getElementById("form-aposta");
 
 formAposta.addEventListener("submit", async (evento) => {
     evento.preventDefault();
+
+    if (new Date() > prazoFinal) {
+        alert("O prazo para apostas encerrou às 20h! Acompanhe o ranking na página inicial.");
+        window.location.href = "index.html";
+        return;
+    }
 
     if (!usuarioLogado) {
         alert("Erro: Usuário não autenticado.");

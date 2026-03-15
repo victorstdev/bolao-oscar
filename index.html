@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -7,8 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-    
+
     <div class="top-bar">
         <div class="app-title">
             <h1>OSCARS 2026</h1>
@@ -19,13 +21,20 @@
         </div>
     </div>
 
+    <div class="countdown-container" id="countdown-container">
+        <i class="fas fa-stopwatch"></i>
+        <span>Encerramento:</span>
+        <span class="countdown-time" id="countdown-timer">Carregando...</span>
+    </div>
+
     <div class="dash-hero" id="dash-hero">
         <div class="dash-tag" id="dash-tag">Ação Necessária</div>
         <h2 id="dash-title">Faça suas Apostas</h2>
         <p id="dash-desc">Entre com sua conta do Google para preencher sua ficha e entrar no ranking oficial.</p>
 
         <button id="btn-login-google" class="btn-dash" style="background: #fff; color: #000;">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" style="width:18px;"> Entrar para Jogar
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" style="width:18px;">
+            Entrar para Jogar
         </button>
         <a href="apostar.html" id="btn-hero-apostar" class="btn-dash" style="display: none;">
             Preencher Apostas Agora
@@ -51,10 +60,10 @@
     </div>
 
     <div class="podium-container" id="podium-container">
-        </div>
+    </div>
 
     <div class="ranking-list" id="ranking-list">
-        </div>
+    </div>
 
     <nav class="bottom-nav">
         <a href="index.html" class="nav-item active"><i class="fas fa-chart-simple"></i><span>Ranking</span></a>
@@ -64,4 +73,5 @@
 
     <script type="module" src="app.js"></script>
 </body>
+
 </html>

@@ -83,6 +83,9 @@ function calcularEAtualizarRanking() {
     const top3 = rankingCalculado.slice(0, 3);
     const resto = rankingCalculado.slice(3);
 
+    // ==========================================
+    // 1. DESENHA O PÓDIO (Com Foto do Google)
+    // ==========================================
     if (top3.length > 0) {
         const ordemVisual = [];
         if(top3[1]) ordemVisual.push({ ...top3[1], pos: 2 });
@@ -90,27 +93,43 @@ function calcularEAtualizarRanking() {
         if(top3[2]) ordemVisual.push({ ...top3[2], pos: 3 });
 
         ordemVisual.forEach(p => {
-            const inicial = p.nome.charAt(0).toUpperCase();
+            // Verifica se o usuário tem foto. Se sim, cria a tag <img>. Se não, usa a letra.
+            const avatarHTML = p.foto 
+                ? `<img src="${p.foto}" alt="${p.nome}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">` 
+                : p.nome.charAt(0).toUpperCase();
+
             containerPodio.innerHTML += `
                 <div class="podium-item rank-${p.pos}">
                     <div class="podium-name">${p.nome}</div>
                     <div class="podium-pts">${p.pontos} pts</div>
-                    <div class="podium-avatar">${inicial}</div>
+                    <div class="podium-avatar">${avatarHTML}</div>
                     <div class="podium-block">${p.pos}º</div>
                 </div>
             `;
         });
     }
 
+    // ==========================================
+    // 2. DESENHA A LISTA (Agora com miniaturas!)
+    // ==========================================
     resto.forEach((p, index) => {
         const posicaoReal = index + 4;
         const corPontos = p.pontos < 0 ? "#ff4444" : "var(--text-main)"; 
-        const classeDestaque = p.nome === "Seu Nome" ? "is-me" : ""; // Temporário para teste visual
+        
+        // Vamos colocar uma miniatura da foto na lista também para ficar mais premium
+        const miniAvatarHTML = p.foto
+            ? `<img src="${p.foto}" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; border: 1px solid #444;">`
+            : `<div style="width: 32px; height: 32px; border-radius: 50%; background: var(--surface-light); display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold;">${p.nome.charAt(0).toUpperCase()}</div>`;
+
+        // Puxa o e-mail do usuário logado para destacar o card dele na lista
+        const emailLogado = auth.currentUser ? auth.currentUser.email : "";
+        const classeDestaque = p.email === emailLogado ? "is-me" : ""; 
 
         containerLista.innerHTML += `
             <div class="ranking-card ${classeDestaque}">
                 <div class="rank-info">
                     <span class="rank-position">${posicaoReal}</span>
+                    ${miniAvatarHTML}
                     <span class="rank-name">${p.nome}</span>
                 </div>
                 <div class="rank-points" style="color: ${corPontos}">${p.pontos}</div>

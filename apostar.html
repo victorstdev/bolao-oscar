@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,33 +7,61 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
     <div style="max-width: 500px; width: 90%; margin: auto; padding-top: 20px;">
         <div class="form-header">
-            <h1>Sua Cédula</h1>
+            <h1>Sua Ficha</h1>
             <p>Vote nos melhores do ano no cinema.</p>
         </div>
+
         <form id="form-aposta">
-            <input type="text" id="nome" class="dark-input" required placeholder="Digite seu nome">
+            
+            <div class="user-display">
+                <i class="fas fa-user-circle"></i>
+                <span id="display-nome">Carregando seu perfil...</span>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-text">SEÇÃO <span id="current-step-text">1</span> DE <span id="total-steps-text">25</span></div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+            </div>
+
             <div id="categorias-container"></div>
 
-            <h2 class="category-title"><i class="fas fa-bullseye"></i> Certeza Absoluta</h2>
-            <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 15px;">Escolha a categoria onde você
-                quer dobrar seus pontos (Se errar, você perde os pontos base!).</p>
-            <select id="certeza_absoluta" class="dark-input" required>
-                <option value="">Selecione a categoria All-In...</option>
-            </select>
-            <button type="submit" class="btn-lock">Confirmar Minhas Escolhas</button>
+            <div id="step-final" class="category-step">
+                <h2 class="category-title"><i class="fas fa-bullseye"></i> Certeza Absoluta</h2>
+                <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 15px;">Escolha a categoria onde você tem certeza absoluta. Seus pontos nela serão TRIPLICADOS. Mas se errar, você perde os pontos base!</p>
+                <select id="certeza_absoluta" class="dark-input" required>
+                    <option value="">Selecione seu All-In...</option>
+                </select>
+            </div>
+
+            <div id="step-review" class="category-step">
+                <h2 class="category-title"><i class="fas fa-search"></i> Revisão da Ficha</h2>
+                <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 15px;">Confira seus palpites. Se quiser mudar algo, use o botão "Voltar".</p>
+                
+                <div id="review-list" class="review-container">
+                    </div>
+
+                <button type="submit" class="btn-lock"><i class="fas fa-lock"></i> Salvar Ficha e Enviar</button>
+            </div>
+
+            <div class="stepper-nav">
+                <button type="button" id="btn-prev" class="btn-nav" style="display: none;">Voltar</button>
+                <button type="button" id="btn-next" class="btn-nav primary">Próxima Categoria <i class="fas fa-arrow-right"></i></button>
+            </div>
+            
         </form>
     </div>
 
     <nav class="bottom-nav">
         <a href="index.html" class="nav-item"><i class="fas fa-chart-simple"></i><span>Ranking</span></a>
-        <a href="apostar.html" class="nav-item"><i class="fas fa-clipboard-check"></i><span>Palpites</span></a>
+        <a href="apostar.html" class="nav-item active"><i class="fas fa-clipboard-check"></i><span>Palpites</span></a>
         <a href="perfil.html" class="nav-item"><i class="fas fa-user"></i><span>Perfil</span></a>
     </nav>
+
     <script type="module" src="apostar.js"></script>
 </body>
-
 </html>

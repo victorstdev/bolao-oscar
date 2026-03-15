@@ -7,16 +7,16 @@ export const categoriasOscar = [
         nome: "Melhor Filme", 
         peso: 50, 
         indicados: [
-            { nome: "Bugonia", img: "https://upload.wikimedia.org/wikipedia/en/2/23/Bugonia_poster.jpg" },
-            { nome: "F1", img: "https://upload.wikimedia.org/wikipedia/en/9/9f/F1_poster.jpg" },
-            { nome: "Frankenstein", img: "https://upload.wikimedia.org/wikipedia/en/a/a4/Frankenstein_%282025_film%29_poster.jpg" },
-            { nome: "Hamnet", img: "https://upload.wikimedia.org/wikipedia/en/6/69/Hamnet_film_poster.jpg" },
-            { nome: "Marty Supreme", img: "https://upload.wikimedia.org/wikipedia/en/4/4c/Marty_Supreme_poster.jpg" },
-            { nome: "Uma Batalha Após a Outra", img: "https://upload.wikimedia.org/wikipedia/en/8/87/The_Battle_of_Baktan_Cross_poster.jpg" },
-            { nome: "O Agente Secreto", img: "https://upload.wikimedia.org/wikipedia/pt/2/20/I%27m_Still_Here_%28poster%29.jpg" },
-            { nome: "Valor Sentimental", img: "https://upload.wikimedia.org/wikipedia/en/3/36/Sentimental_Value_poster.jpg" },
-            { nome: "Pecadores", img: "https://upload.wikimedia.org/wikipedia/en/a/a2/Sinners_poster.jpg" },
-            { nome: "Sonhos de Trem", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Sonhos+de+Trem" }
+            { nome: "Bugonia", img: "https://upload.wikimedia.org/wikipedia/en/2/27/Bugonia_film_poster.jpg" },
+            { nome: "F1", img: "https://upload.wikimedia.org/wikipedia/en/3/38/F1_%282025_film%29.png" },
+            { nome: "Frankenstein", img: "https://upload.wikimedia.org/wikipedia/en/9/94/Frankenstein_2025_film_poster.jpg" },
+            { nome: "Hamnet", img: "https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Hamnet_film_poster.jpeg/250px-Hamnet_film_poster.jpeg" },
+            { nome: "Marty Supreme", img: "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Marty_Supreme_poster.jpg/250px-Marty_Supreme_poster.jpg" },
+            { nome: "Uma Batalha Após a Outra", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/One_Battle_After_Another.jpg/250px-One_Battle_After_Another.jpg" },
+            { nome: "O Agente Secreto", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/57/The_Secret_Agent.png/250px-The_Secret_Agent.png" },
+            { nome: "Valor Sentimental", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/Sentimental_Value_2025.jpeg/250px-Sentimental_Value_2025.jpeg" },
+            { nome: "Pecadores", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Sinners_%282025_film%29_poster.jpg/250px-Sinners_%282025_film%29_poster.jpg" },
+            { nome: "Sonhos de Trem", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/58/Train_Dreams_poster.jpeg/250px-Train_Dreams_poster.jpeg" }
         ] 
     },
     { 
@@ -24,11 +24,11 @@ export const categoriasOscar = [
         nome: "Melhor Direção", 
         peso: 50, 
         indicados: [
-            { nome: "Chloé Zhao (Hamnet)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Chlo%C3%A9_Zhao_2021.jpg/400px-Chlo%C3%A9_Zhao_2021.jpg" },
-            { nome: "Josh Safdie (Marty Supreme)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Josh_Safdie_at_the_2014_Tokyo_International_Film_Festival.jpg/400px-Josh_Safdie_at_the_2014_Tokyo_International_Film_Festival.jpg" },
-            { nome: "Paul Thomas Anderson (Uma Batalha...)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Paul_Thomas_Anderson_2018.jpg/400px-Paul_Thomas_Anderson_2018.jpg" },
-            { nome: "Joachim Trier (Valor Sentimental)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Joachim_Trier_Cannes_2015.jpg/400px-Joachim_Trier_Cannes_2015.jpg" },
-            { nome: "Ryan Coogler (Pecadores)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Ryan_Coogler_by_Gage_Skidmore.jpg/400px-Ryan_Coogler_by_Gage_Skidmore.jpg" }
+            { nome: "Chloé Zhao (Hamnet)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Chlo%C3%A9_Zhao_at_the_2026_Berlin_International_Film_Festival-68507.jpg/250px-Chlo%C3%A9_Zhao_at_the_2026_Berlin_International_Film_Festival-68507.jpg" },
+            { nome: "Josh Safdie (Marty Supreme)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Josh_Safdie_%282010%29.png/250px-Josh_Safdie_%282010%29.png" },
+            { nome: "Paul Thomas Anderson (Uma Batalha Após a Outra)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Paul_Thomas_Anderson_-_BFI_Southbank.jpg/250px-Paul_Thomas_Anderson_-_BFI_Southbank.jpg" },
+            { nome: "Joachim Trier (Valor Sentimental)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Joachim_Trier-9987.jpg/250px-Joachim_Trier-9987.jpg" },
+            { nome: "Ryan Coogler (Pecadores)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Ryan_Coogler_-_Sinners.jpg/250px-Ryan_Coogler_-_Sinners.jpg" }
         ] 
     },
     { 
@@ -36,11 +36,11 @@ export const categoriasOscar = [
         nome: "Melhor Ator", 
         peso: 50, 
         indicados: [
-            { nome: "Timothée Chalamet", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Timoth%C3%A9e_Chalamet_2017_Berlin_Film_Festival_1.jpg/400px-Timoth%C3%A9e_Chalamet_2017_Berlin_Film_Festival_1.jpg" },
-            { nome: "Leonardo DiCaprio", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Leonardo_DiCaprio_2014.jpg/400px-Leonardo_DiCaprio_2014.jpg" },
-            { nome: "Ethan Hawke", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Ethan_Hawke_at_the_2018_Premiere_of_Blaze.jpg/400px-Ethan_Hawke_at_the_2018_Premiere_of_Blaze.jpg" },
-            { nome: "Michael B. Jordan", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Michael_B._Jordan_at_the_2018_Comic-Con_International.jpg/400px-Michael_B._Jordan_at_the_2018_Comic-Con_International.jpg" },
-            { nome: "Wagner Moura", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Wagner_Moura_2019.jpg/400px-Wagner_Moura_2019.jpg" }
+            { nome: "Timothée Chalamet", img: "" },
+            { nome: "Leonardo DiCaprio", img: "" },
+            { nome: "Ethan Hawke", img: "" },
+            { nome: "Michael B. Jordan", img: "" },
+            { nome: "Wagner Moura", img: "" }
         ] 
     },
     { 
@@ -48,11 +48,11 @@ export const categoriasOscar = [
         nome: "Melhor Atriz", 
         peso: 50, 
         indicados: [
-            { nome: "Jessie Buckley", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Jessie_Buckley_at_the_2019_Toronto_International_Film_Festival.jpg/400px-Jessie_Buckley_at_the_2019_Toronto_International_Film_Festival.jpg" },
-            { nome: "Rose Byrne", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Rose_Byrne_2014.jpg/400px-Rose_Byrne_2014.jpg" },
-            { nome: "Kate Hudson", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Kate_Hudson_at_the_2016_Toronto_International_Film_Festival.jpg/400px-Kate_Hudson_at_the_2016_Toronto_International_Film_Festival.jpg" },
-            { nome: "Renate Reinsve", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Renate_Reinsve_2021.jpg/400px-Renate_Reinsve_2021.jpg" },
-            { nome: "Emma Stone", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Emma_Stone_at_the_2024_Golden_Globes.jpg/400px-Emma_Stone_at_the_2024_Golden_Globes.jpg" }
+            { nome: "Jessie Buckley", img: "" },
+            { nome: "Rose Byrne", img: "" },
+            { nome: "Kate Hudson", img: "" },
+            { nome: "Renate Reinsve", img: "" },
+            { nome: "Emma Stone", img: "" }
         ] 
     },
 
@@ -64,11 +64,11 @@ export const categoriasOscar = [
         nome: "Ator Coadjuvante", 
         peso: 30, 
         indicados: [
-            { nome: "Benicio del Toro", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Benicio+del+Toro" },
-            { nome: "Jacob Elordi", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Jacob+Elordi" },
-            { nome: "Delroy Lindo", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Delroy+Lindo" },
-            { nome: "Sean Penn", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Sean+Penn" },
-            { nome: "Stellan Skarsgård", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Stellan+Skarsgard" }
+            { nome: "Benicio del Toro", img: "" },
+            { nome: "Jacob Elordi", img: "" },
+            { nome: "Delroy Lindo", img: "" },
+            { nome: "Sean Penn", img: "" },
+            { nome: "Stellan Skarsgård", img: "" }
         ] 
     },
     { 
@@ -76,11 +76,11 @@ export const categoriasOscar = [
         nome: "Atriz Coadjuvante", 
         peso: 30, 
         indicados: [
-            { nome: "Elle Fanning", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Elle+Fanning" },
-            { nome: "Inga Ibsdotter Lilleaas", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Inga+Lilleaas" },
-            { nome: "Amy Madigan", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Amy+Madigan" },
-            { nome: "Wunmi Mosaku", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Wunmi+Mosaku" },
-            { nome: "Teyana Taylor", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Teyana+Taylor" }
+            { nome: "Elle Fanning", img: "" },
+            { nome: "Inga Ibsdotter Lilleaas", img: "" },
+            { nome: "Amy Madigan", img: "" },
+            { nome: "Wunmi Mosaku", img: "" },
+            { nome: "Teyana Taylor", img: "" }
         ] 
     },
     { 
@@ -88,11 +88,11 @@ export const categoriasOscar = [
         nome: "Roteiro Original", 
         peso: 30, 
         indicados: [
-            { nome: "Blue Moon", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Blue+Moon" },
-            { nome: "Foi Apenas Um Acidente", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Foi+Apenas+Um+Acidente" },
-            { nome: "Marty Supreme", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Marty+Supreme" },
-            { nome: "Valor Sentimental", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Valor+Sentimental" },
-            { nome: "Pecadores", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Pecadores" }
+            { nome: "Blue Moon", img: "" },
+            { nome: "Foi Apenas Um Acidente", img: "" },
+            { nome: "Marty Supreme", img: "" },
+            { nome: "Valor Sentimental", img: "" },
+            { nome: "Pecadores", img: "" }
         ] 
     },
     { 
@@ -100,11 +100,11 @@ export const categoriasOscar = [
         nome: "Roteiro Adaptado", 
         peso: 30, 
         indicados: [
-            { nome: "Bugonia", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Bugonia" },
-            { nome: "Frankenstein", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Frankenstein" },
-            { nome: "Hamnet", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Hamnet" },
-            { nome: "Uma Batalha Após a Outra", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Uma+Batalha" },
-            { nome: "Sonhos de Trem", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Sonhos+de+Trem" }
+            { nome: "Bugonia", img: "" },
+            { nome: "Frankenstein", img: "" },
+            { nome: "Hamnet", img: "" },
+            { nome: "Uma Batalha Após a Outra", img: "" },
+            { nome: "Sonhos de Trem", img: "" }
         ] 
     },
     { 
@@ -112,11 +112,11 @@ export const categoriasOscar = [
         nome: "Filme Internacional", 
         peso: 30, 
         indicados: [
-            { nome: "O Agente Secreto (Brasil)", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=O+Agente+Secreto" },
-            { nome: "Foi Apenas Um Acidente (França)", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Foi+Apenas+Um+Acidente" },
-            { nome: "Valor Sentimental (Noruega)", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Valor+Sentimental" },
-            { nome: "Sirât (Espanha)", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Sirat" },
-            { nome: "A Voz de Hind Rajab (Tunísia)", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Hind+Rajab" }
+            { nome: "O Agente Secreto (Brasil)", img: "" },
+            { nome: "Foi Apenas Um Acidente (França)", img: "" },
+            { nome: "Valor Sentimental (Noruega)", img: "" },
+            { nome: "Sirât (Espanha)", img: "" },
+            { nome: "A Voz de Hind Rajab (Tunísia)", img: "" }
         ] 
     },
     { 
@@ -124,11 +124,11 @@ export const categoriasOscar = [
         nome: "Filme de Animação", 
         peso: 30, 
         indicados: [
-            { nome: "Arco", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Arco" },
-            { nome: "Elio", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Elio" },
-            { nome: "Guerreiras do K-Pop", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=K-Pop" },
-            { nome: "A Pequena Amélie", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Amelie" },
-            { nome: "Zootopia 2", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Zootopia+2" }
+            { nome: "Arco", img: "" },
+            { nome: "Elio", img: "" },
+            { nome: "Guerreiras do K-Pop", img: "" },
+            { nome: "A Pequena Amélie", img: "" },
+            { nome: "Zootopia 2", img: "" }
         ] 
     },
     { 
@@ -136,11 +136,11 @@ export const categoriasOscar = [
         nome: "Documentário em Longa-Metragem", 
         peso: 30, 
         indicados: [
-            { nome: "Alabama: Presos no Sistema", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Alabama" },
-            { nome: "Embaixo da Luz de Neon", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Neon" },
-            { nome: "Mr. Nobody Against Putin", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Mr.+Nobody" },
-            { nome: "A Vizinha Perfeita", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Vizinha" },
-            { nome: "Rompendo Rochas", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Rochas" }
+            { nome: "Alabama: Presos no Sistema", img: "" },
+            { nome: "Embaixo da Luz de Neon", img: "" },
+            { nome: "Mr. Nobody Against Putin", img: "" },
+            { nome: "A Vizinha Perfeita", img: "" },
+            { nome: "Rompendo Rochas", img: "" }
         ] 
     },
 

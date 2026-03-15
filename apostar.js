@@ -124,19 +124,30 @@ categoriasOscar.forEach((cat, index) => {
 });
 
 // Lógica de clique nos cartões
+// Lógica de clique nos cartões
 document.querySelectorAll('.nominee-card').forEach(card => {
-    card.addEventListener('click', function () {
+    card.addEventListener('click', function() {
         const categoriaClicada = this.getAttribute('data-categoria');
         const indicadoClicado = this.getAttribute('data-indicado');
 
+        // Remove a seleção de todos os outros cartões desta categoria
         document.querySelectorAll(`.nominee-card[data-categoria="${categoriaClicada}"]`).forEach(c => {
             c.classList.remove('picked');
             c.querySelector('.vote-btn').innerText = "VOTAR";
         });
 
+        // Adiciona a seleção no cartão clicado
         this.classList.add('picked');
         this.querySelector('.vote-btn').innerText = "✔ ESCOLHIDO";
         meusPalpites[categoriaClicada] = indicadoClicado;
+
+        // 👉 O TOQUE NINJA: Avanço automático após 600 milissegundos
+        setTimeout(() => {
+            // Só avança se não estiver na tela final de Certeza Absoluta ou Revisão
+            if (stepAtual < categoriasOscar.length) {
+                btnNext.click(); // Simula o clique no botão "Próximo"
+            }
+        }, 600);
     });
 });
 

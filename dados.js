@@ -136,11 +136,11 @@ export const categoriasOscar = [
         nome: "Documentário em Longa-Metragem", 
         peso: 30, 
         indicados: [
-            { nome: "Alabama: Presos no Sistema", img: "" },
-            { nome: "Embaixo da Luz de Neon", img: "" },
-            { nome: "Mr. Nobody Against Putin", img: "" },
-            { nome: "A Vizinha Perfeita", img: "" },
-            { nome: "Rompendo Rochas", img: "" }
+            { nome: "Alabama: Presos no Sistema", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAH3UZnPQ4s6WcfwzdxQ4ufP0KktOsjn7PUAYJbV1C2bFif1to" },
+            { nome: "Embaixo da Luz de Neon", img: "https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Come_See_Me_in_the_Good_Light.jpg/250px-Come_See_Me_in_the_Good_Light.jpg" },
+            { nome: "Mr. Nobody Against Putin", img: "https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Mr._Nobody_Against_Putin_Poster.jpg/250px-Mr._Nobody_Against_Putin_Poster.jpg" },
+            { nome: "A Vizinha Perfeita", img: "https://upload.wikimedia.org/wikipedia/en/thumb/0/0a/The_Perfect_Neighbor_poster.jpeg/250px-The_Perfect_Neighbor_poster.jpeg" },
+            { nome: "Rompendo Rochas", img: "https://m.media-amazon.com/images/M/MV5BYmZkZmU2OTctM2U4Ny00NmMyLWFmZTktMjk4MDJkY2QyZDdiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" }
         ] 
     },
 
@@ -248,11 +248,11 @@ export const categoriasOscar = [
         nome: "Canção Original", 
         peso: 15, 
         indicados: [
-            { nome: "Dear Me", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Dear+Me" },
-            { nome: "Golden", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Golden" },
-            { nome: "I Lied To You", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=I+Lied" },
-            { nome: "Sweet Dreams Of Joy", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Sweet+Dreams" },
-            { nome: "Train Dreams", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Train+Dreams" }
+            { nome: "Dear Me (Diane Warren: Relentless)", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Dear+Me" },
+            { nome: "Golden (Guerreiras do K-Pop)", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Golden" },
+            { nome: "I Lied To You (Pecadores)", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=I+Lied" },
+            { nome: "Sweet Dreams Of Joy (Viva Verdi)", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Sweet+Dreams" },
+            { nome: "Train Dreams (Sonhos de Trem)", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Train+Dreams" }
         ] 
     },
     { 

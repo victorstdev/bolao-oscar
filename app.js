@@ -210,7 +210,7 @@ function calcularEAtualizarRanking() {
 // ==========================================
 // 5. CONTADOR REGRESSIVO (DEADLINE 20H)
 // ==========================================
-const dataFimApostas = new Date("2026-03-15T20:00:00-03:00").getTime();
+const dataFimApostas = new Date("2026-03-15T20:30:00-03:00").getTime();
 const countdownElement = document.getElementById("countdown-timer");
 const countdownContainer = document.getElementById("countdown-container");
 

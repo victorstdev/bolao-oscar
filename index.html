@@ -1,37 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Ranking - Oscar 2026</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-    <div class="app-header">
-        <h1>Ranking Global</h1>
-        <p>Temporada Oscar 2026</p>
-        
-        <button id="btn-login-google" class="btn-login">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google Logo">
-            Entrar para Jogar
+    
+    <div class="top-bar">
+        <div class="app-title">
+            <h1>OSCARS 2026</h1>
+            <p>Liga de Palpites</p>
+        </div>
+        <div class="user-points-pill" id="header-points" style="display: none;">
+            <i class="fas fa-star"></i> <span id="header-points-value">0</span> PTS
+        </div>
+    </div>
+
+    <div class="dash-hero" id="dash-hero">
+        <div class="dash-tag" id="dash-tag">Ação Necessária</div>
+        <h2 id="dash-title">Faça suas Apostas</h2>
+        <p id="dash-desc">Entre com sua conta do Google para preencher sua ficha e entrar no ranking oficial.</p>
+
+        <button id="btn-login-google" class="btn-dash" style="background: #fff; color: #000;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" style="width:18px;"> Entrar para Jogar
         </button>
+        <a href="apostar.html" id="btn-hero-apostar" class="btn-dash" style="display: none;">
+            Preencher Apostas Agora
+        </a>
+    </div>
+
+    <div class="stats-grid" id="stats-grid" style="display: none;">
+        <div class="stat-box">
+            <div class="stat-icon"><i class="fas fa-arrow-trend-up"></i></div>
+            <div class="stat-label">Meu Rank</div>
+            <div class="stat-value" id="stat-rank">--</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-icon"><i class="fas fa-clipboard-check"></i></div>
+            <div class="stat-label">Status</div>
+            <div class="stat-value" id="stat-status" style="font-size: 18px;">Pendente</div>
+        </div>
+    </div>
+
+    <div class="section-header">
+        <h2>Top Players</h2>
+        <span>Ao Vivo</span>
     </div>
 
     <div class="podium-container" id="podium-container">
-        <div style="color: var(--text-muted);">Calculando o ranking...</div>
-    </div>
-    <div class="ranking-list" id="ranking-list"></div>
+        </div>
+
+    <div class="ranking-list" id="ranking-list">
+        </div>
 
     <nav class="bottom-nav">
-        <a href="index.html" class="nav-item"><i class="fas fa-chart-simple"></i><span>Ranking</span></a>
+        <a href="index.html" class="nav-item active"><i class="fas fa-chart-simple"></i><span>Ranking</span></a>
         <a href="apostar.html" class="nav-item"><i class="fas fa-clipboard-check"></i><span>Palpites</span></a>
         <a href="perfil.html" class="nav-item"><i class="fas fa-user"></i><span>Perfil</span></a>
     </nav>
 
     <script type="module" src="app.js"></script>
 </body>
-
 </html>

@@ -36,11 +36,11 @@ export const categoriasOscar = [
         nome: "Melhor Ator", 
         peso: 50, 
         indicados: [
-            { nome: "Timothée Chalamet", img: "" },
-            { nome: "Leonardo DiCaprio", img: "" },
-            { nome: "Ethan Hawke", img: "" },
-            { nome: "Michael B. Jordan", img: "" },
-            { nome: "Wagner Moura", img: "" }
+            { nome: "Timothée Chalamet (Marty Supreme)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Timoth%C3%A9e_Chalamet-63482_%28cropped%29.jpg/250px-Timoth%C3%A9e_Chalamet-63482_%28cropped%29.jpg" },
+            { nome: "Leonardo DiCaprio (Uma Batalha Após a Outra)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/LeoPTABFI191125-28_%28cropped%29.jpg/250px-LeoPTABFI191125-28_%28cropped%29.jpg" },
+            { nome: "Ethan Hawke (Blue Moon)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/BlueMoonBFILFF161025-53_%2854875551295%29_%28cropped_2%29.jpg/250px-BlueMoonBFILFF161025-53_%2854875551295%29_%28cropped_2%29.jpg" },
+            { nome: "Michael B. Jordan (Pecadores)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Michael_B_Jordan_-_Sinners.jpg/250px-Michael_B_Jordan_-_Sinners.jpg" },
+            { nome: "Wagner Moura (O Agente Secreto)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Wagner_Moura-6546_%283x4%29.jpg/250px-Wagner_Moura-6546_%283x4%29.jpg" }
         ] 
     },
     { 
@@ -48,11 +48,11 @@ export const categoriasOscar = [
         nome: "Melhor Atriz", 
         peso: 50, 
         indicados: [
-            { nome: "Jessie Buckley", img: "" },
-            { nome: "Rose Byrne", img: "" },
-            { nome: "Kate Hudson", img: "" },
-            { nome: "Renate Reinsve", img: "" },
-            { nome: "Emma Stone", img: "" }
+            { nome: "Jessie Buckley (Hamnet)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Jessie_Buckley_at_the_Toronto_International_Film_Festival_01.jpg_%28Cropped_%26_Centered%29.jpg/250px-Jessie_Buckley_at_the_Toronto_International_Film_Festival_01.jpg_%28Cropped_%26_Centered%29.jpg" },
+            { nome: "Rose Byrne (Se Eu Tivesse Pernas, Eu Te Chutaria)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Rose_Byrne_at_Berlinale_2025-4.jpg/250px-Rose_Byrne_at_Berlinale_2025-4.jpg" },
+            { nome: "Kate Hudson (Song Song Blue)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Kate_Hudson_-_Song_Sung_Blue.jpg/250px-Kate_Hudson_-_Song_Sung_Blue.jpg" },
+            { nome: "Renate Reinsve (Valor Sentimental)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Renate_Reinsve-9937.jpg/250px-Renate_Reinsve-9937.jpg" },
+            { nome: "Emma Stone (Bugonia)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Emma_Stone_at_the_2025_Venice_Film_Festival-6313_%28cropped%29.jpg/250px-Emma_Stone_at_the_2025_Venice_Film_Festival-6313_%28cropped%29.jpg" }
         ] 
     },
 
@@ -64,11 +64,11 @@ export const categoriasOscar = [
         nome: "Ator Coadjuvante", 
         peso: 30, 
         indicados: [
-            { nome: "Benicio del Toro", img: "" },
-            { nome: "Jacob Elordi", img: "" },
-            { nome: "Delroy Lindo", img: "" },
-            { nome: "Sean Penn", img: "" },
-            { nome: "Stellan Skarsgård", img: "" }
+            { nome: "Benicio del Toro (Uma Batalha Após a Outra)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Benicio_del_Toro-7624.jpg/250px-Benicio_del_Toro-7624.jpg" },
+            { nome: "Jacob Elordi (Frankenstein)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/JacobElordi-TIFF2025-01_%28cropped_2%29.png/250px-JacobElordi-TIFF2025-01_%28cropped_2%29.png" },
+            { nome: "Delroy Lindo (Pecadores)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Delroy_Lindo_cropped.jpg/250px-Delroy_Lindo_cropped.jpg" },
+            { nome: "Sean Penn (Uma Batalha Após a Outra)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Superpower_%282023%29-60523_%28cropped%29.jpg/250px-Superpower_%282023%29-60523_%28cropped%29.jpg" },
+            { nome: "Stellan Skarsgård (Valor Sentimental)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Stellan_Skarsg%C3%A5rd-9707_%28cropped%29.jpg/250px-Stellan_Skarsg%C3%A5rd-9707_%28cropped%29.jpg" }
         ] 
     },
     { 
@@ -76,11 +76,11 @@ export const categoriasOscar = [
         nome: "Atriz Coadjuvante", 
         peso: 30, 
         indicados: [
-            { nome: "Elle Fanning", img: "" },
-            { nome: "Inga Ibsdotter Lilleaas", img: "" },
-            { nome: "Amy Madigan", img: "" },
-            { nome: "Wunmi Mosaku", img: "" },
-            { nome: "Teyana Taylor", img: "" }
+            { nome: "Elle Fanning (Valor Sentimental)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Elle_Fanning_at_the_2025_Cannes_Film_Festival.jpg/250px-Elle_Fanning_at_the_2025_Cannes_Film_Festival.jpg" },
+            { nome: "Inga Ibsdotter Lilleaas (Valor Sentimental)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Inga_Ibsdotter_Lilleaas-9741.jpg/250px-Inga_Ibsdotter_Lilleaas-9741.jpg" },
+            { nome: "Amy Madigan (A Hora do Mal)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Amy_Madigan_%2840389212382%29.jpg/250px-Amy_Madigan_%2840389212382%29.jpg" },
+            { nome: "Wunmi Mosaku (Pecadores)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Wunmi_Mosaku_-_Sinners.jpg/250px-Wunmi_Mosaku_-_Sinners.jpg" },
+            { nome: "Teyana Taylor (Uma Batalha Após a Outra)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Teyana_Taylor_%28cropped%29.jpg/250px-Teyana_Taylor_%28cropped%29.jpg" }
         ] 
     },
     { 
@@ -88,11 +88,11 @@ export const categoriasOscar = [
         nome: "Roteiro Original", 
         peso: 30, 
         indicados: [
-            { nome: "Blue Moon", img: "" },
-            { nome: "Foi Apenas Um Acidente", img: "" },
-            { nome: "Marty Supreme", img: "" },
-            { nome: "Valor Sentimental", img: "" },
-            { nome: "Pecadores", img: "" }
+            { nome: "Blue Moon", img: "https://upload.wikimedia.org/wikipedia/en/thumb/a/a1/Blue_Moon_poster.jpg/250px-Blue_Moon_poster.jpg" },
+            { nome: "Foi Apenas Um Acidente", img: "https://upload.wikimedia.org/wikipedia/en/thumb/8/84/Un_Simple_Accident_2025.jpeg/250px-Un_Simple_Accident_2025.jpeg" },
+            { nome: "Marty Supreme", img: "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Marty_Supreme_poster.jpg/250px-Marty_Supreme_poster.jpg" },
+            { nome: "Valor Sentimental", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/Sentimental_Value_2025.jpeg/250px-Sentimental_Value_2025.jpeg" },
+            { nome: "Pecadores", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Sinners_%282025_film%29_poster.jpg/250px-Sinners_%282025_film%29_poster.jpg" }
         ] 
     },
     { 
@@ -100,11 +100,11 @@ export const categoriasOscar = [
         nome: "Roteiro Adaptado", 
         peso: 30, 
         indicados: [
-            { nome: "Bugonia", img: "" },
-            { nome: "Frankenstein", img: "" },
-            { nome: "Hamnet", img: "" },
-            { nome: "Uma Batalha Após a Outra", img: "" },
-            { nome: "Sonhos de Trem", img: "" }
+            { nome: "Bugonia", img: "https://upload.wikimedia.org/wikipedia/en/2/27/Bugonia_film_poster.jpg" },
+            { nome: "Frankenstein", img: "https://upload.wikimedia.org/wikipedia/en/9/94/Frankenstein_2025_film_poster.jpg" },
+            { nome: "Hamnet", img: "https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Hamnet_film_poster.jpeg/250px-Hamnet_film_poster.jpeg" },
+            { nome: "Uma Batalha Após a Outra", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/One_Battle_After_Another.jpg/250px-One_Battle_After_Another.jpg" },
+            { nome: "Sonhos de Trem", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/58/Train_Dreams_poster.jpeg/250px-Train_Dreams_poster.jpeg" }
         ] 
     },
     { 
@@ -112,11 +112,11 @@ export const categoriasOscar = [
         nome: "Filme Internacional", 
         peso: 30, 
         indicados: [
-            { nome: "O Agente Secreto (Brasil)", img: "" },
-            { nome: "Foi Apenas Um Acidente (França)", img: "" },
-            { nome: "Valor Sentimental (Noruega)", img: "" },
-            { nome: "Sirât (Espanha)", img: "" },
-            { nome: "A Voz de Hind Rajab (Tunísia)", img: "" }
+            { nome: "O Agente Secreto (Brasil)", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/57/The_Secret_Agent.png/250px-The_Secret_Agent.png" },
+            { nome: "Foi Apenas Um Acidente (França)", img: "https://upload.wikimedia.org/wikipedia/en/thumb/8/84/Un_Simple_Accident_2025.jpeg/250px-Un_Simple_Accident_2025.jpeg" },
+            { nome: "Valor Sentimental (Noruega)", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/Sentimental_Value_2025.jpeg/250px-Sentimental_Value_2025.jpeg" },
+            { nome: "Sirât (Espanha)", img: "https://upload.wikimedia.org/wikipedia/en/thumb/9/91/Sirat_2025.jpeg/250px-Sirat_2025.jpeg" },
+            { nome: "A Voz de Hind Rajab (Tunísia)", img: "https://upload.wikimedia.org/wikipedia/en/thumb/b/b5/The_Voice_of_Hind_Rajab_film_poster.jpg/250px-The_Voice_of_Hind_Rajab_film_poster.jpg" }
         ] 
     },
     { 
@@ -124,11 +124,11 @@ export const categoriasOscar = [
         nome: "Filme de Animação", 
         peso: 30, 
         indicados: [
-            { nome: "Arco", img: "" },
-            { nome: "Elio", img: "" },
-            { nome: "Guerreiras do K-Pop", img: "" },
-            { nome: "A Pequena Amélie", img: "" },
-            { nome: "Zootopia 2", img: "" }
+            { nome: "Arco", img: "https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Arco_poster.jpg/250px-Arco_poster.jpg" },
+            { nome: "Elio", img: "https://upload.wikimedia.org/wikipedia/en/thumb/4/4e/Elio_film_poster.jpg/250px-Elio_film_poster.jpg" },
+            { nome: "Guerreiras do K-Pop", img: "https://upload.wikimedia.org/wikipedia/en/thumb/9/93/KPDHposter.jpeg/250px-KPDHposter.jpeg" },
+            { nome: "A Pequena Amélie", img: "https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Amelie_et_la_metaphysique_des_tubes.jpg/250px-Amelie_et_la_metaphysique_des_tubes.jpg" },
+            { nome: "Zootopia 2", img: "https://upload.wikimedia.org/wikipedia/en/thumb/6/6a/Zootopia_2_%282025_film%29.jpg/250px-Zootopia_2_%282025_film%29.jpg" }
         ] 
     },
     { 

@@ -152,11 +152,11 @@ export const categoriasOscar = [
         nome: "Fotografia", 
         peso: 15, 
         indicados: [
-            { nome: "Frankenstein", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Frankenstein" },
-            { nome: "Marty Supreme", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Marty+Supreme" },
-            { nome: "Uma Batalha Após a Outra", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Batalha" },
-            { nome: "Pecadores", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Pecadores" },
-            { nome: "Sonhos de Trem", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Sonhos+de+Trem" }
+            { nome: "Frankenstein", img: "https://upload.wikimedia.org/wikipedia/en/9/94/Frankenstein_2025_film_poster.jpg"},
+            { nome: "Marty Supreme", img: "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Marty_Supreme_poster.jpg/250px-Marty_Supreme_poster.jpg"},
+            { nome: "Uma Batalha Após a Outra", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/One_Battle_After_Another.jpg/250px-One_Battle_After_Another.jpg"},
+            { nome: "Pecadores", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Sinners_%282025_film%29_poster.jpg/250px-Sinners_%282025_film%29_poster.jpg"},
+            { nome: "Sonhos de Trem", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/58/Train_Dreams_poster.jpeg/250px-Train_Dreams_poster.jpeg"}
         ] 
     },
     { 
@@ -164,11 +164,11 @@ export const categoriasOscar = [
         nome: "Montagem", 
         peso: 15, 
         indicados: [
-            { nome: "F1", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=F1" },
-            { nome: "Marty Supreme", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Marty+Supreme" },
-            { nome: "Uma Batalha Após a Outra", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Batalha" },
-            { nome: "Pecadores", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Pecadores" },
-            { nome: "Valor Sentimental", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Valor+Sentimental" }
+            { nome: "F1", img: "https://upload.wikimedia.org/wikipedia/en/3/38/F1_%282025_film%29.png"},
+            { nome: "Marty Supreme", img: "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Marty_Supreme_poster.jpg/250px-Marty_Supreme_poster.jpg"},
+            { nome: "Uma Batalha Após a Outra", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/One_Battle_After_Another.jpg/250px-One_Battle_After_Another.jpg"},
+            { nome: "Pecadores", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Sinners_%282025_film%29_poster.jpg/250px-Sinners_%282025_film%29_poster.jpg"},
+            { nome: "Valor Sentimental", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/Sentimental_Value_2025.jpeg/250px-Sentimental_Value_2025.jpeg"}
         ] 
     },
     { 
@@ -176,23 +176,23 @@ export const categoriasOscar = [
         nome: "Design de Produção", 
         peso: 15, 
         indicados: [
-            { nome: "Frankenstein", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Frankenstein" },
-            { nome: "Hamnet", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Hamnet" },
-            { nome: "Marty Supreme", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Marty+Supreme" },
-            { nome: "Pecadores", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Pecadores" },
-            { nome: "Uma Batalha Após a Outra", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Batalha" }
+            { nome: "Frankenstein", img: "https://upload.wikimedia.org/wikipedia/en/9/94/Frankenstein_2025_film_poster.jpg"},
+            { nome: "Hamnet", img: "https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Hamnet_film_poster.jpeg/250px-Hamnet_film_poster.jpeg"},
+            { nome: "Marty Supreme", img: "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Marty_Supreme_poster.jpg/250px-Marty_Supreme_poster.jpg"},
+            { nome: "Pecadores", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Sinners_%282025_film%29_poster.jpg/250px-Sinners_%282025_film%29_poster.jpg"},
+            { nome: "Uma Batalha Após a Outra", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/One_Battle_After_Another.jpg/250px-One_Battle_After_Another.jpg"}
         ] 
     },
     { 
         id: "figurino", 
         nome: "Figurino", 
-        peso: 15, 
+        peso: 15,
         indicados: [
-            { nome: "Avatar: Fogo e Cinzas", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Avatar+3" },
-            { nome: "Frankenstein", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Frankenstein" },
-            { nome: "Hamnet", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Hamnet" },
-            { nome: "Marty Supreme", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Marty+Supreme" },
-            { nome: "Pecadores", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Pecadores" }
+            { nome: "Avatar: Fogo e Cinzas", img: "https://upload.wikimedia.org/wikipedia/en/thumb/9/95/Avatar_Fire_and_Ash_poster.jpeg/250px-Avatar_Fire_and_Ash_poster.jpeg"},
+            { nome: "Frankenstein", img: "https://upload.wikimedia.org/wikipedia/en/9/94/Frankenstein_2025_film_poster.jpg"},
+            { nome: "Hamnet", img: "https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Hamnet_film_poster.jpeg/250px-Hamnet_film_poster.jpeg"},
+            { nome: "Marty Supreme", img: "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Marty_Supreme_poster.jpg/250px-Marty_Supreme_poster.jpg"},
+            { nome: "Pecadores", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Sinners_%282025_film%29_poster.jpg/250px-Sinners_%282025_film%29_poster.jpg"}
         ] 
     },
     { 
@@ -200,11 +200,11 @@ export const categoriasOscar = [
         nome: "Maquiagem e Penteados", 
         peso: 15, 
         indicados: [
-            { nome: "Coração de Lutador", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Lutador" },
-            { nome: "Frankenstein", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Frankenstein" },
-            { nome: "Kokuho", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Kokuho" },
-            { nome: "Pecadores", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Pecadores" },
-            { nome: "A Meia-Irmã Feia", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Meia-Irma" }
+            { nome: "Coração de Lutador", img: "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/The_Smashing_Machine_%282025_film%29.jpg/250px-The_Smashing_Machine_%282025_film%29.jpg"},
+            { nome: "Frankenstein", img: "https://upload.wikimedia.org/wikipedia/en/9/94/Frankenstein_2025_film_poster.jpg"},
+            { nome: "Kokuho", img: "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/Kokuho_poster.jpg/250px-Kokuho_poster.jpg"},
+            { nome: "Pecadores", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Sinners_%282025_film%29_poster.jpg/250px-Sinners_%282025_film%29_poster.jpg"},
+            { nome: "A Meia-Irmã Feia", img: "https://upload.wikimedia.org/wikipedia/pt/thumb/b/b0/AMeiaIrm%C3%A3Feia.PNG/250px-AMeiaIrm%C3%A3Feia.PNG"}
         ] 
     },
     { 
@@ -212,11 +212,11 @@ export const categoriasOscar = [
         nome: "Som", 
         peso: 15, 
         indicados: [
-            { nome: "F1", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=F1" },
-            { nome: "Frankenstein", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Frankenstein" },
-            { nome: "Pecadores", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Pecadores" },
-            { nome: "Sirât", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Sirat" },
-            { nome: "Uma Batalha Após a Outra", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Batalha" }
+            { nome: "F1", img: "https://upload.wikimedia.org/wikipedia/en/3/38/F1_%282025_film%29.png"},
+            { nome: "Frankenstein", img: "https://upload.wikimedia.org/wikipedia/en/9/94/Frankenstein_2025_film_poster.jpg"},
+            { nome: "Pecadores", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Sinners_%282025_film%29_poster.jpg/250px-Sinners_%282025_film%29_poster.jpg"},
+            { nome: "Sirât", img: "https://upload.wikimedia.org/wikipedia/pt/thumb/9/91/Sirat_2025.jpeg/250px-Sirat_2025.jpeg"},
+            { nome: "Uma Batalha Após a Outra", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/One_Battle_After_Another.jpg/250px-One_Battle_After_Another.jpg"}
         ] 
     },
     { 
@@ -224,11 +224,11 @@ export const categoriasOscar = [
         nome: "Efeitos Visuais", 
         peso: 15, 
         indicados: [
-            { nome: "Avatar: Fogo e Cinzas", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Avatar+3" },
-            { nome: "F1", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=F1" },
-            { nome: "Jurassic World: Recomeço", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Jurassic" },
-            { nome: "O Ônibus Perdido", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Onibus" },
-            { nome: "Pecadores", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Pecadores" }
+            { nome: "Avatar: Fogo e Cinzas", img: "https://upload.wikimedia.org/wikipedia/en/thumb/9/95/Avatar_Fire_and_Ash_poster.jpeg/250px-Avatar_Fire_and_Ash_poster.jpeg"},
+            { nome: "F1", img: "https://upload.wikimedia.org/wikipedia/en/3/38/F1_%282025_film%29.png"},
+            { nome: "Jurassic World: Recomeço", img: "https://upload.wikimedia.org/wikipedia/pt/thumb/a/a5/Jurassic_World_Rebirth_poster.jpg/250px-Jurassic_World_Rebirth_poster.jpg"},
+            { nome: "O Ônibus Perdido", img: "https://upload.wikimedia.org/wikipedia/en/thumb/8/88/The_Lost_Bus_poster.jpg/250px-The_Lost_Bus_poster.jpg"},
+            { nome: "Pecadores", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Sinners_%282025_film%29_poster.jpg/250px-Sinners_%282025_film%29_poster.jpg"}
         ] 
     },
     { 
@@ -236,11 +236,11 @@ export const categoriasOscar = [
         nome: "Trilha Sonora Original", 
         peso: 15, 
         indicados: [
-            { nome: "Bugonia", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Bugonia" },
-            { nome: "Frankenstein", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Frankenstein" },
-            { nome: "Hamnet", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Hamnet" },
-            { nome: "Pecadores", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Pecadores" },
-            { nome: "Uma Batalha Após a Outra", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Batalha" }
+            { nome: "Bugonia", img: "https://upload.wikimedia.org/wikipedia/en/2/27/Bugonia_film_poster.jpg"},
+            { nome: "Frankenstein", img: "https://upload.wikimedia.org/wikipedia/en/9/94/Frankenstein_2025_film_poster.jpg"},
+            { nome: "Hamnet", img: "https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Hamnet_film_poster.jpeg/250px-Hamnet_film_poster.jpeg"},
+            { nome: "Pecadores", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Sinners_%282025_film%29_poster.jpg/250px-Sinners_%282025_film%29_poster.jpg"},
+            { nome: "Uma Batalha Após a Outra", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/One_Battle_After_Another.jpg/250px-One_Battle_After_Another.jpg"}
         ] 
     },
     { 
@@ -248,11 +248,11 @@ export const categoriasOscar = [
         nome: "Canção Original", 
         peso: 15, 
         indicados: [
-            { nome: "Dear Me (Diane Warren: Relentless)", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Dear+Me" },
-            { nome: "Golden (Guerreiras do K-Pop)", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Golden" },
-            { nome: "I Lied To You (Pecadores)", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=I+Lied" },
-            { nome: "Sweet Dreams Of Joy (Viva Verdi)", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Sweet+Dreams" },
-            { nome: "Train Dreams (Sonhos de Trem)", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Train+Dreams" }
+            { nome: "Dear Me (Diane Warren: Relentless)", img: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5wsqDx2tmP4KO_NuDkAr2xqv40F8s3xeSpSfKnA9NA30EkhvF"},
+            { nome: "Golden (Guerreiras do K-Pop)", img: "https://upload.wikimedia.org/wikipedia/en/thumb/9/93/KPDHposter.jpeg/250px-KPDHposter.jpeg"},
+            { nome: "I Lied To You (Pecadores)", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Sinners_%282025_film%29_poster.jpg/250px-Sinners_%282025_film%29_poster.jpg"},
+            { nome: "Sweet Dreams Of Joy (Viva Verdi)", img: "https://upload.wikimedia.org/wikipedia/en/thumb/0/0a/Viva_Verdi%21.jpg/250px-Viva_Verdi%21.jpg"},
+            { nome: "Train Dreams (Sonhos de Trem)", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/58/Train_Dreams_poster.jpeg/250px-Train_Dreams_poster.jpeg"}
         ] 
     },
     { 
@@ -260,11 +260,11 @@ export const categoriasOscar = [
         nome: "Seleção de Elenco", 
         peso: 15, 
         indicados: [
-            { nome: "Hamnet", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Hamnet" },
-            { nome: "Marty Supreme", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Marty+Supreme" },
-            { nome: "O Agente Secreto", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=O+Agente" },
-            { nome: "Pecadores", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Pecadores" },
-            { nome: "Uma Batalha Após a Outra", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Batalha" }
+            { nome: "Hamnet", img: "https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Hamnet_film_poster.jpeg/250px-Hamnet_film_poster.jpeg"},
+            { nome: "Marty Supreme", img: "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Marty_Supreme_poster.jpg/250px-Marty_Supreme_poster.jpg"},
+            { nome: "O Agente Secreto", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/57/The_Secret_Agent.png/250px-The_Secret_Agent.png"},
+            { nome: "Pecadores", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Sinners_%282025_film%29_poster.jpg/250px-Sinners_%282025_film%29_poster.jpg"},
+            { nome: "Uma Batalha Após a Outra", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/One_Battle_After_Another.jpg/250px-One_Battle_After_Another.jpg"}
         ] 
     },
     { 
@@ -272,11 +272,11 @@ export const categoriasOscar = [
         nome: "Curta-Metragem em Live-Action", 
         peso: 15, 
         indicados: [
-            { nome: "Butcher's Stain", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Butcher" },
-            { nome: "A Friend of Dorothy", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Dorothy" },
-            { nome: "Jane Austen's Period Drama", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Jane+Austen" },
-            { nome: "Os Cantores", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Cantores" },
-            { nome: "Two People Exchanging Saliva", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Two+People" }
+            { nome: "Butcher's Stain", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScr-8vaqHUbBqTBEAd36prds2P2C5O2BC4Zg&s"},
+            { nome: "A Friend of Dorothy", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjPE72Sq9WFRZyEfSON8aSeu5Ms3FW6-ie0w&s"},
+            { nome: "Jane Austen's Period Drama", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhlQZnSHN9x0gdaEKnH-Rymr8nVF718XWXYw&s"},
+            { nome: "Os Cantores", img: "https://br.web.img3.acsta.net/c_310_420/img/37/80/3780440672e992a53709d51572037696.jpg"},
+            { nome: "Two People Exchanging Saliva", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMbHs9kqinsxg0po1Ehg8HuC0CnWwUPUpOWA&s"}
         ] 
     },
     { 
@@ -284,11 +284,11 @@ export const categoriasOscar = [
         nome: "Curta-Metragem de Animação", 
         peso: 15, 
         indicados: [
-            { nome: "Butterfly", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Butterfly" },
-            { nome: "Forevergreen", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Forevergreen" },
-            { nome: "The Girl Who Cried Pearls", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=The+Girl" },
-            { nome: "Retirement Plan", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Retirement" },
-            { nome: "The Three Sisters", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Three+Sisters" }
+            { nome: "Butterfly", img: "https://i.ytimg.com/vi/sCsDnszbQRk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDHQxnxMKIRQJJcRqedIrQ10x4zyA"},
+            { nome: "Forevergreen", img: "https://static.wixstatic.com/media/aead62_c232b06a04f042f3b875c22437cf2a3b~mv2.jpg"},
+            { nome: "The Girl Who Cried Pearls", img: "https://br.web.img3.acsta.net/c_310_420/img/bf/57/bf57ccefbb8d5304d33d7199993641a3.jpg"},
+            { nome: "Retirement Plan", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/58/Retirement_Plan_Film_Poster.jpg/250px-Retirement_Plan_Film_Poster.jpg"},
+            { nome: "The Three Sisters", img: "https://m.media-amazon.com/images/M/MV5BMzM3MjZlYjUtMTU3Ni00MWVjLWEzNjItODNiNDQ2NzFjYTdkXkEyXkFqcGc@._V1_.jpg"}
         ] 
     },
     { 
@@ -296,11 +296,11 @@ export const categoriasOscar = [
         nome: "Curta Documentário", 
         peso: 15, 
         indicados: [
-            { nome: "All the Empty Rooms", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Empty+Rooms" },
-            { nome: "Armed Only With a Camera", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Camera" },
-            { nome: "Children No More", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Children" },
-            { nome: "O Diabo Não Tem Descanso", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=O+Diabo" },
-            { nome: "Perfectly a Strangeness", img: "https://via.placeholder.com/300x450/1a1726/fbc02d?text=Strangeness" }
+            { nome: "All the Empty Rooms", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSesffVKhQedOrAKHmS0aJRSBIJH-0nta94TA&s"},
+            { nome: "Armed Only With a Camera", img: "https://m.media-amazon.com/images/M/MV5BZTc2YmQzZmMtYjQxYS00ZTYzLThhMDEtNzhlMjVhMTNiYmQ1XkEyXkFqcGc@._V1_.jpg"},
+            { nome: "Children No More", img: "https://m.media-amazon.com/images/M/MV5BOGMwMDJlMzAtNThhMS00MTYxLWE2MGItOTE2OGNmM2UxOWFhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"},
+            { nome: "O Diabo Não Tem Descanso", img: "https://br.web.img2.acsta.net/img/4e/55/4e5572c72261acd33e5fb33922961c52.png"},
+            { nome: "Perfectly a Strangeness", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEpjQ4TFK8giSYR4_HN3DvBUA1XoLpEvJtYA&s"}
         ] 
     }
 ];

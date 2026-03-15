@@ -210,40 +210,59 @@ function calcularEAtualizarRanking() {
 // ==========================================
 // 5. CONTADOR REGRESSIVO (DEADLINE 20H)
 // ==========================================
-const dataFimApostas = new Date("2026-03-15T20:30:00-03:00").getTime();
+const dataFimApostas = new Date("2026-03-15T20:00:00-03:00").getTime();
 const countdownElement = document.getElementById("countdown-timer");
 const countdownContainer = document.getElementById("countdown-container");
 
-const timerInterval = setInterval(() => {
+function atualizarContador() {
+    if(!countdownElement) return true;
+
     const agora = new Date().getTime();
     const distancia = dataFimApostas - agora;
 
     if (distancia < 0) {
         // O TEMPO ACABOU!
-        clearInterval(timerInterval);
-        countdownElement.innerText = "ENCERRADAS";
+        countdownElement.innerText = "00h 00m 00s";
+        countdownElement.style.color = "#ff4444";
+        countdownElement.style.textShadow = "0 0 10px rgba(255, 68, 68, 0.4)";
         
-        // Muda o visual para vermelho
-        countdownContainer.style.color = "#ff4444";
-        countdownContainer.style.borderColor = "#ff4444";
-        countdownContainer.style.background = "rgba(255, 68, 68, 0.1)";
-        countdownContainer.style.boxShadow = "none";
+        const labelIcon = countdownContainer.querySelector('i');
+        if(labelIcon) labelIcon.style.color = "#ff4444";
         
-        // Se a pessoa não apostou, avisa no card que não dá mais
-        if(dashTag) dashTag.innerText = "Fechado";
-        if(dashTitle) dashTitle.innerText = "Apostas Encerradas";
-        if(dashDesc) dashDesc.innerText = "O tapete vermelho já começou! Acompanhe o ranking ser atualizado ao vivo.";
-        if(btnApostar) btnApostar.style.display = "none"; 
+        // Proteções para não dar erro se a div estiver oculta
+        const elDashTag = document.getElementById("dash-tag");
+        const elDashTitle = document.getElementById("dash-title");
+        const elBtnApostar = document.getElementById("btn-hero-apostar");
         
-    } else {
-        // CALCULA O TEMPO RESTANTE
-        const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
-        const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
-
-        countdownElement.innerText = 
-            String(horas).padStart(2, '0') + "h " + 
-            String(minutos).padStart(2, '0') + "m " + 
-            String(segundos).padStart(2, '0') + "s";
+        if(elDashTag) elDashTag.innerText = "Fechado";
+        if(elDashTitle) elDashTitle.innerText = "Apostas Encerradas";
+        if(elBtnApostar) elBtnApostar.style.display = "none"; 
+        
+        return true; // Retorna true para parar o loop
     }
-}, 1000); // Atualiza a cada 1 segundo
+
+    // CALCULA O TEMPO RESTANTE
+    const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+    const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+
+    countdownElement.innerText = 
+        String(horas).padStart(2, '0') + "h " + 
+        String(minutos).padStart(2, '0') + "m " + 
+        String(segundos).padStart(2, '0') + "s";
+        
+    return false;
+}
+
+// 1. Chama imediatamente para não ficar esperando 1 segundo e aparecer "Carregando"
+const tempoEsgotado = atualizarContador();
+
+// 2. Se o tempo não esgotou, inicia o relógio automático
+if (!tempoEsgotado) {
+    const timerInterval = setInterval(() => {
+        const acabou = atualizarContador();
+        if (acabou) {
+            clearInterval(timerInterval); // Para o relógio quando zerar
+        }
+    }, 1000);
+}

@@ -1,6 +1,8 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
 import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
 import { categoriasOscar } from './dados.js';
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
+import { categoriasOscar } from './dados.js';
 
 // INSIRA SUA KEY
 const firebaseConfig = {
@@ -14,6 +16,23 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+const auth = getAuth(app);
+const provider = new GoogleAuthProvider();
+
+let usuarioLogado = null;
+
+// 1. OUVINTE DE LOGIN (Verifica se a pessoa está logada ao abrir a página)
+onAuthStateChanged(auth, (user) => {
+    if (user) {
+        usuarioLogado = user;
+        // Opcional: Você pode preencher o campo "nome" automaticamente com user.displayName
+        document.getElementById("nome").value = user.displayName;
+    } else {
+        usuarioLogado = null;
+        // Força o login antes de liberar a tela de aposta
+        signInWithPopup(auth, provider).catch(erro => console.error("Erro no login:", erro));
+    }
+});
 
 let meusPalpites = {}; 
 const containerCategorias = document.getElementById("categorias-container");
@@ -54,14 +73,25 @@ document.querySelectorAll('.nominee-card').forEach(card => {
 });
 
 const formAposta = document.getElementById("form-aposta");
+
 formAposta.addEventListener("submit", async (evento) => {
     evento.preventDefault();
+
+    if (!usuarioLogado) {
+        alert("Você precisa estar logado para apostar!");
+        signInWithPopup(auth, provider);
+        return;
+    }
+
     if (Object.keys(meusPalpites).length < categoriasOscar.length) {
         alert("Selecione um vencedor para todas as categorias!"); return;
     }
+
     const dadosDaAposta = {
-        nome: document.getElementById("nome").value,
-        pontos: 0, palpites: meusPalpites,
+        nome: document.getElementById("nome").value, // Ou usuarioLogado.displayName
+        email: usuarioLogado.email, // Salva o email por segurança
+        pontos: 0, 
+        palpites: meusPalpites,
         certeza_absoluta: document.getElementById("certeza_absoluta").value
     };
 
@@ -69,11 +99,13 @@ formAposta.addEventListener("submit", async (evento) => {
     btnSubmit.innerText = "Salvando..."; btnSubmit.style.opacity = "0.7";
 
     try {
-        await addDoc(collection(db, "participantes"), dadosDaAposta);
+        // MUDANÇA PRINCIPAL: Usamos setDoc e amarramos a aposta à ID do usuário
+        await setDoc(doc(db, "participantes", usuarioLogado.uid), dadosDaAposta);
+        
         alert("Sua cédula foi trancada! Boa sorte!");
         window.location.href = "index.html"; 
     } catch (erro) {
-        alert("Erro ao salvar.");
+        alert("Erro ao salvar. Verifique se você está logado.");
         btnSubmit.innerText = "Confirmar Minhas Escolhas"; btnSubmit.style.opacity = "1";
     }
 });

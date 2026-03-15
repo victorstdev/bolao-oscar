@@ -14,6 +14,23 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+const auth = getAuth(app);
+const provider = new GoogleAuthProvider();
+
+const UID_DO_ADMIN = "COLE_SUA_UID_AQUI"; 
+let usuarioLogado = null;
+
+onAuthStateChanged(auth, (user) => {
+    if (user) {
+        usuarioLogado = user;
+        if(user.uid !== UID_DO_ADMIN) {
+            alert("Acesso negado. Você não é o administrador.");
+            window.location.href = "index.html"; // Expulsa o intruso
+        }
+    } else {
+        signInWithPopup(auth, provider);
+    }
+});
 
 const containerAdmin = document.getElementById("admin-categorias-container");
 
@@ -35,8 +52,13 @@ categoriasOscar.forEach(cat => {
 
 document.getElementById("form-admin").addEventListener("submit", async (evento) => {
     evento.preventDefault();
-    let gabaritoOficial = { ultima_atualizacao: new Date().toISOString() };
+    
+    if(!usuarioLogado || usuarioLogado.uid !== UID_DO_ADMIN) {
+        alert("Sai fora, hacker! 🛑");
+        return;
+    }
 
+    let gabaritoOficial = { ultima_atualizacao: new Date().toISOString() };
     categoriasOscar.forEach(cat => {
         const selectVencedor = document.getElementById(`vencedor_${cat.id}`);
         if (selectVencedor) gabaritoOficial[cat.id] = selectVencedor.value;

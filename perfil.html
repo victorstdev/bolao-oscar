@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil - Oscar 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div style="max-width: 500px; width: 90%; margin: auto; padding-top: 20px;">
+        
+        <div class="profile-header">
+            <div id="user-avatar" class="profile-avatar"><i class="fas fa-user"></i></div>
+            <h1 id="user-name" class="profile-name">Carregando...</h1>
+            <div id="user-email" class="profile-email"></div>
+        </div>
+
+        <div class="stats-card">
+            <div class="stats-info">
+                <h3>Status Atual</h3>
+                <p>Cinéfilo Nível <span id="user-level">1</span></p>
+            </div>
+            <div class="stats-points">
+                <span id="user-total-points">0</span>
+                <small>Pontos Totais</small>
+            </div>
+        </div>
+
+        <h2 class="section-title">Conquistas <span>Exemplos</span></h2>
+        <div class="badges-grid">
+            <div class="badge-card unlocked">
+                <span class="badge-icon">🍿</span>
+                <span class="badge-title">Apostador</span>
+            </div>
+            <div class="badge-card" id="badge-allin">
+                <span class="badge-icon">🎯</span>
+                <span class="badge-title">Acerto Crítico</span>
+            </div>
+            <div class="badge-card" id="badge-sweep">
+                <span class="badge-icon">🧹</span>
+                <span class="badge-title">Varredura</span>
+            </div>
+        </div>
+
+        <h2 class="section-title">Minha Cédula <a href="apostar.html" style="font-size: 12px; color: var(--gold); text-decoration: none;">Editar</a></h2>
+        
+        <div id="predictions-list">
+            <p style="color: var(--text-muted); text-align: center; padding: 20px;">Carregando seus palpites...</p>
+        </div>
+
+    </div>
+
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item"><i class="fas fa-chart-simple"></i><span>Ranking</span></a>
+        <a href="apostar.html" class="nav-item"><i class="fas fa-clipboard-check"></i><span>Palpites</span></a>
+        <a href="perfil.html" class="nav-item active"><i class="fas fa-user"></i><span>Perfil</span></a>
+        </nav>
+
+    <script type="module" src="perfil.js"></script>
+</body>
+</html>

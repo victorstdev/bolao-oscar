@@ -17,7 +17,7 @@ const db = getFirestore(app);
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
 
-const UID_DO_ADMIN = "COLE_SUA_UID_AQUI"; 
+const UID_DO_ADMIN = "sQWpepd3HlMUeFFMk0ks3Xpcvll2"; 
 let usuarioLogado = null;
 
 onAuthStateChanged(auth, (user) => {
